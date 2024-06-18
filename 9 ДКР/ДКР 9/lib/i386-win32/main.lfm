@@ -1,0 +1,62 @@
+object fMain: TfMain
+  Left = 293
+  Height = 470
+  Top = 163
+  Width = 1202
+  BorderStyle = bsDialog
+  Caption = 'Список мотоциклов'
+  ClientHeight = 470
+  ClientWidth = 1202
+  Color = clMenuText
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object SG: TStringGrid
+    Left = 0
+    Height = 402
+    Top = 68
+    Width = 1202
+    Align = alBottom
+    AlternateColor = clWindowFrame
+    Color = clMenuHighlight
+    ColCount = 8
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 0
+    OnDblClick = bEditClick
+  end
+  object bAdd: TSpeedButton
+    Left = 21
+    Height = 36
+    Top = 24
+    Width = 209
+    Caption = 'Добавить'
+    OnClick = bAddClick
+  end
+  object bDel: TSpeedButton
+    Left = 459
+    Height = 36
+    Top = 24
+    Width = 209
+    Caption = 'Удалить'
+    OnClick = bDelClick
+  end
+  object bEdit: TSpeedButton
+    Left = 240
+    Height = 36
+    Top = 24
+    Width = 209
+    Caption = 'Редактировать'
+    OnClick = bEditClick
+  end
+  object bSort: TSpeedButton
+    Left = 679
+    Height = 36
+    Top = 24
+    Width = 209
+    Caption = 'Сортировать список'
+    OnClick = bSortClick
+  end
+end

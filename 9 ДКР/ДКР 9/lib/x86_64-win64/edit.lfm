@@ -1,0 +1,162 @@
+object fEdit: TfEdit
+  Left = 1269
+  Height = 1142
+  Top = 172
+  Width = 692
+  BorderStyle = bsDialog
+  Caption = 'Редактор телевизоров'
+  ClientHeight = 1142
+  ClientWidth = 692
+  Color = clWhite
+  DesignTimePPI = 192
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object Lname: TLabel
+    Left = 14
+    Height = 32
+    Top = 14
+    Width = 245
+    Caption = 'Название телевизора:'
+    ParentColor = False
+    OnClick = LnameClick
+  end
+  object eName: TEdit
+    Left = 14
+    Height = 40
+    Top = 54
+    Width = 520
+    TabOrder = 0
+  end
+  object Lcountry: TLabel
+    Left = 14
+    Height = 32
+    Top = 120
+    Width = 226
+    Caption = 'Яркость телевизора:'
+    ParentColor = False
+  end
+  object eCountry: TEdit
+    Left = 14
+    Height = 40
+    Top = 160
+    Width = 350
+    TabOrder = 1
+    OnKeyPress = eCountryKeyPress
+  end
+  object bSave: TBitBtn
+    Left = 48
+    Height = 60
+    Top = 1040
+    Width = 268
+    Caption = 'Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bSaveClick
+    TabOrder = 2
+  end
+  object bCancel: TBitBtn
+    Left = 368
+    Height = 60
+    Top = 1040
+    Width = 268
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object YkGod: TLabel
+    Left = 14
+    Height = 32
+    Top = 228
+    Width = 270
+    Caption = 'Разрешение телевизора'
+    ParentColor = False
+  end
+  object eGod: TEdit
+    Left = 14
+    Height = 40
+    Top = 268
+    Width = 348
+    TabOrder = 4
+    OnChange = eGodChange
+    OnKeyPress = eGodKeyPress
+  end
+  object LRegh: TLabel
+    Left = 14
+    Height = 32
+    Top = 334
+    Width = 177
+    Caption = 'Производитель:'
+    ParentColor = False
+  end
+  object Regh: TEdit
+    Left = 14
+    Height = 40
+    Top = 374
+    Width = 520
+    TabOrder = 5
+    OnChange = ReghChange
+  end
+  object LRegh1: TLabel
+    Left = 14
+    Height = 32
+    Top = 448
+    Width = 108
+    Caption = 'Герцовка:'
+    ParentColor = False
+  end
+  object Regh1: TEdit
+    Left = 16
+    Height = 40
+    Top = 488
+    Width = 520
+    TabOrder = 6
+    OnChange = ReghChange
+  end
+  object LForma: TLabel
+    Left = 16
+    Height = 32
+    Top = 572
+    Width = 122
+    Caption = 'Диагональ:'
+  end
+  object LVaiv: TLabel
+    Left = 16
+    Height = 32
+    Top = 704
+    Width = 135
+    Caption = 'Изогнутость'
+  end
+  object LCount: TLabel
+    Left = 14
+    Height = 32
+    Top = 824
+    Width = 135
+    Caption = 'Количество:'
+  end
+  object Forma: TEdit
+    Left = 16
+    Height = 40
+    Top = 624
+    Width = 384
+    TabOrder = 7
+  end
+  object Vaiv: TEdit
+    Left = 16
+    Height = 40
+    Top = 752
+    Width = 386
+    TabOrder = 8
+  end
+  object Count: TEdit
+    Left = 16
+    Height = 40
+    Top = 878
+    Width = 160
+    TabOrder = 9
+    OnKeyPress = CountKeyPress
+  end
+end

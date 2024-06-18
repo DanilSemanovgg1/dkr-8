@@ -1,0 +1,163 @@
+object fEdit: TfEdit
+  Left = 288
+  Height = 688
+  Top = 197
+  Width = 511
+  BorderStyle = bsDialog
+  Caption = 'Список мотоциклов'
+  ClientHeight = 688
+  ClientWidth = 511
+  Color = clWhite
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object Lname: TLabel
+    Left = 9
+    Height = 20
+    Top = 9
+    Width = 128
+    Caption = 'Марка мотоцикла:'
+    ParentColor = False
+    OnClick = LnameClick
+  end
+  object eName: TEdit
+    Left = 9
+    Height = 28
+    Top = 34
+    Width = 325
+    TabOrder = 0
+  end
+  object Lcountry: TLabel
+    Left = 9
+    Height = 20
+    Top = 75
+    Width = 82
+    Caption = 'КОЛ-ВО ЛС:'
+    ParentColor = False
+  end
+  object eCountry: TEdit
+    Left = 9
+    Height = 28
+    Top = 100
+    Width = 219
+    TabOrder = 1
+    OnKeyPress = eCountryKeyPress
+  end
+  object bSave: TBitBtn
+    Left = 30
+    Height = 38
+    Top = 650
+    Width = 168
+    Caption = 'Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bSaveClick
+    TabOrder = 2
+  end
+  object bCancel: TBitBtn
+    Left = 230
+    Height = 38
+    Top = 650
+    Width = 168
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object YkGod: TLabel
+    Left = 9
+    Height = 20
+    Top = 142
+    Width = 107
+    Caption = 'Диаметр колёс:'
+    ParentColor = False
+  end
+  object eGod: TEdit
+    Left = 9
+    Height = 28
+    Top = 168
+    Width = 218
+    TabOrder = 4
+    OnChange = eGodChange
+    OnKeyPress = eGodKeyPress
+  end
+  object LRegh: TLabel
+    Left = 9
+    Height = 20
+    Top = 209
+    Width = 39
+    Caption = 'Цена:'
+    ParentColor = False
+    OnClick = LReghClick
+  end
+  object Regh: TEdit
+    Left = 9
+    Height = 28
+    Top = 234
+    Width = 325
+    TabOrder = 5
+    OnChange = ReghChange
+  end
+  object LRegh1: TLabel
+    Left = 9
+    Height = 20
+    Top = 280
+    Width = 173
+    Caption = 'Максимальная скорость:'
+    ParentColor = False
+  end
+  object Regh1: TEdit
+    Left = 10
+    Height = 28
+    Top = 305
+    Width = 325
+    TabOrder = 6
+    OnChange = ReghChange
+  end
+  object LForma: TLabel
+    Left = 10
+    Height = 20
+    Top = 358
+    Width = 34
+    Caption = 'цвет:'
+  end
+  object LVaiv: TLabel
+    Left = 10
+    Height = 20
+    Top = 440
+    Width = 24
+    Caption = 'Бак'
+  end
+  object LCount: TLabel
+    Left = 9
+    Height = 20
+    Top = 515
+    Width = 84
+    Caption = 'Количество:'
+  end
+  object Forma: TEdit
+    Left = 10
+    Height = 28
+    Top = 390
+    Width = 240
+    TabOrder = 7
+  end
+  object Vaiv: TEdit
+    Left = 10
+    Height = 28
+    Top = 470
+    Width = 241
+    TabOrder = 8
+  end
+  object Count: TEdit
+    Left = 10
+    Height = 28
+    Top = 549
+    Width = 100
+    TabOrder = 9
+    OnKeyPress = CountKeyPress
+  end
+end

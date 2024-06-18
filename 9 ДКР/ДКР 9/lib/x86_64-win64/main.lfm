@@ -1,0 +1,62 @@
+object fMain: TfMain
+  Left = 458
+  Height = 752
+  Top = 130
+  Width = 2022
+  BorderStyle = bsDialog
+  Caption = 'Склад телевизоров'
+  ClientHeight = 752
+  ClientWidth = 2022
+  Color = clMenuText
+  DesignTimePPI = 192
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object SG: TStringGrid
+    Left = 0
+    Height = 644
+    Top = 108
+    Width = 2022
+    Align = alBottom
+    AlternateColor = clWindowFrame
+    Color = clMenuHighlight
+    ColCount = 8
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 0
+    OnDblClick = bEditClick
+  end
+  object bAdd: TSpeedButton
+    Left = 34
+    Height = 58
+    Top = 38
+    Width = 334
+    Caption = 'Добавить'
+    OnClick = bAddClick
+  end
+  object bDel: TSpeedButton
+    Left = 734
+    Height = 58
+    Top = 38
+    Width = 334
+    Caption = 'Удалить'
+    OnClick = bDelClick
+  end
+  object bEdit: TSpeedButton
+    Left = 384
+    Height = 58
+    Top = 38
+    Width = 334
+    Caption = 'Редактировать'
+    OnClick = bEditClick
+  end
+  object bSort: TSpeedButton
+    Left = 1086
+    Height = 58
+    Top = 38
+    Width = 334
+    Caption = 'Сортировать список'
+    OnClick = bSortClick
+  end
+end
